@@ -210,7 +210,20 @@ def update(**kwargs):
             fig.update_layout(
                 xaxis_title="Month",
                 yaxis_title=y_title,
-                height=400
+                height=400,
+                # Add subtle gridlines
+                xaxis=dict(
+                    gridcolor='#EEEEEE',
+                    gridwidth=1,
+                    showgrid=True
+                ),
+                yaxis=dict(
+                    gridcolor='#EEEEEE',
+                    gridwidth=1,
+                    showgrid=True
+                ),
+                plot_bgcolor='white',
+                paper_bgcolor='white'
             )
             
             return fig, ""
@@ -251,7 +264,7 @@ def update(**kwargs):
                 y=ts_data.values,
                 mode='lines+markers',
                 name='Original',
-                line={"color": "#1f77b4"}
+                line={"color": "#5470c6"}  # Use new colorway
             ),
             row=1, col=1
         )
@@ -263,7 +276,7 @@ def update(**kwargs):
                 y=decomposition.trend.values,
                 mode='lines',
                 name='Trend',
-                line={"color": "#ff7f0e"}
+                line={"color": "#FF6600"}  # Neon orange
             ),
             row=2, col=1
         )
@@ -275,7 +288,7 @@ def update(**kwargs):
                 y=decomposition.seasonal.values,
                 mode='lines',
                 name='Seasonal',
-                line={"color": "#2ca02c"}
+                line={"color": "#39FF14"}  # Neon green
             ),
             row=3, col=1
         )
@@ -287,7 +300,7 @@ def update(**kwargs):
                 y=decomposition.resid.values,
                 mode='lines',
                 name='Residual',
-                line={"color": "#d62728"}
+                line={"color": "#ee6666"}  # Use new colorway
             ),
             row=4, col=1
         )
@@ -296,8 +309,14 @@ def update(**kwargs):
         fig.update_layout(
             height=800,
             showlegend=False,
-            title_text=f"Time Series Decomposition: {y_title}"
+            title_text=f"Time Series Decomposition: {y_title}",
+            plot_bgcolor='white',
+            paper_bgcolor='white'
         )
+        
+        # Update all axes to have subtle gridlines
+        fig.update_xaxes(gridcolor='#EEEEEE', gridwidth=1, showgrid=True)
+        fig.update_yaxes(gridcolor='#EEEEEE', gridwidth=1, showgrid=True)
 
         # Update x-axis for bottom subplot only
         fig.update_xaxes(title_text="Month", row=4, col=1)

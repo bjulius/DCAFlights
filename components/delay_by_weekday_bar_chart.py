@@ -194,7 +194,20 @@ def update(**kwargs):
         fig.update_layout(
             xaxis_title="Day of Week",
             yaxis_title=f"Average {delay_label} (minutes)",
-            showlegend=False
+            showlegend=False,
+            # Add subtle gridlines
+            xaxis=dict(
+                gridcolor='#EEEEEE',
+                gridwidth=1,
+                showgrid=True
+            ),
+            yaxis=dict(
+                gridcolor='#EEEEEE', 
+                gridwidth=1,
+                showgrid=True
+            ),
+            plot_bgcolor='white',
+            paper_bgcolor='white'
         )
 
         # Update hover template

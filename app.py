@@ -31,6 +31,10 @@ app = Dash(
     __name__,
     suppress_callback_exceptions=True,  # Required for dynamic layouts
     plugins=[dash_embedded.Embeddable(origins=["*"], supports_credentials=True)],
+    external_stylesheets=[
+        # Add Inter font from Google Fonts
+        "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    ]
 )
 server = app.server
 

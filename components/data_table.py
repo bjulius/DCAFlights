@@ -34,8 +34,17 @@ def component():
                         "filter": True,
                         "resizable": True,
                         "floatingFilter": True
-                    }
+                    },
+                    # Ensure clean table styling - no zebra striping
+                    "rowStyle": {"backgroundColor": "#FFFFFF"},
+                    "getRowStyle": None,  # Disable any alternating row colors
+                    "suppressRowHoverHighlight": False,
+                    "headerHeight": 40,
+                    "rowHeight": 38
                 },
+                # Style to ensure clean borders and no striping
+                style={"height": "600px", "width": "100%"},
+                className="ag-theme-alpine",
                 # empty rowData will be filled by callback
                 rowData=[]
             ),

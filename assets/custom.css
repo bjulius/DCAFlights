@@ -1,0 +1,125 @@
+/* Custom CSS for DCA Flights Dashboard - Professional Theme */
+
+/* Card styling with subtle shadows and thin borders */
+.dash-card, .card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 4px !important;
+}
+
+/* Remove any hard shadows from DDK cards */
+.ddk-card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Card headers with clean borders */
+.card-header, .ddk-card-header {
+    border-bottom: 1px solid #E5E5E5 !important;
+    background-color: #FFFFFF !important;
+}
+
+/* Table styling - no zebra striping */
+.ag-theme-alpine .ag-row-even,
+.ag-theme-alpine .ag-row-odd {
+    background-color: #FFFFFF !important;
+}
+
+/* Thin row separators for tables */
+.ag-theme-alpine .ag-row {
+    border-bottom: 1px solid #F0F0F0 !important;
+}
+/* Clean table headers */
+.ag-theme-alpine .ag-header {
+    background-color: #FAFAFA !important;
+    border-bottom: 1px solid #E5E5E5 !important;
+}
+
+/* Ensure Inter font is used throughout */
+body, .dash-app {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Clean button styling */
+.btn, button {
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 4px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Primary buttons with new accent color */
+.btn-primary {
+    background-color: #5470C6 !important;
+    border-color: #5470C6 !important;
+}
+
+.btn-primary:hover {
+    background-color: #4560B6 !important;
+    border-color: #4560B6 !important;
+}
+
+/* Success and danger colors */.text-success, .badge-success {
+    color: #52B44B !important;
+}
+
+.text-danger, .badge-danger {
+    color: #EE6666 !important;
+}
+
+/* Clean dropdown and input styling */
+.Select-control, .form-control, input, select {
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 4px !important;
+}
+
+/* Remove any box shadows from inputs on focus */
+.Select-control:focus, .form-control:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 2px rgba(84, 112, 198, 0.1) !important;
+    border-color: #5470C6 !important;
+}
+
+/* Graph paper and plot backgrounds */
+.plot-container, .js-plotly-plot .plotly {
+    background-color: #FFFFFF !important;
+}
+
+/* Subtle gridlines in charts */
+.gridlayer line {
+    stroke: #EEEEEE !important;
+    stroke-width: 1px !important;
+}
+
+/* Clean slider styling */.rc-slider-track {
+    background-color: #5470C6 !important;
+}
+
+.rc-slider-handle {
+    border-color: #5470C6 !important;
+}
+
+/* Ensure clean white backgrounds */
+.dash-app, #page-content {
+    background-color: #FFFFFF !important;
+}
+
+/* Remove any unnecessary shadows or borders */
+.shadow-sm {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.shadow {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Ensure plotly modebar has clean styling */
+.modebar {
+    background: transparent !important;
+}
+
+.modebar-btn {
+    background: transparent !important;
+    border: none !important;
+}

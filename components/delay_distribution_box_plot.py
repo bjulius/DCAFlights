@@ -247,6 +247,12 @@ def update(**kwargs):
                     'Night']}
         )
 
+        # Update the jittered points to lighter blue, keep box plots default
+        fig.update_traces(
+            marker=dict(color='#87CEEB', size=5, opacity=0.6),  # Light blue for jittered points
+            selector=dict(type='box')
+        )
+
         # Update layout
         fig.update_layout(
             xaxis_title="Time Period",
