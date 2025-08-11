@@ -1,0 +1,217 @@
+Dataset: data.csv
+Rows: 2500
+Columns: 29
+
+COLUMNS:
+
+year (Int64)
+  Null count: 0 (0.0%)
+  Range: 2019 to 2024
+  Mean: 2021.4632
+  Median: 2021.0
+  Sample values: 2022, 2022, 2022, 2020, 2024, 2022, 2022, 2024, 2019, 2023
+
+month (Int64)
+  Null count: 0 (0.0%)
+  Range: 1 to 12
+  Mean: 6.6336
+  Median: 7.0
+  Sample values: 3, 1, 6, 9, 9, 2, 8, 9, 12, 6
+
+month_name (object)
+  Null count: 0 (0.0%)
+  Unique values: 12
+  String length: 3 to 3 chars
+  Alphabetical range: "Apr" to "Sep"
+  Most common: "Oct", "Aug", "Jun", "Nov", "Sep"
+  Sample values: "Mar", "Jan", "Jun", "Sep", "Sep", "Feb", "Aug", "Sep", "Dec", "Jun"
+
+day (Int64)
+  Null count: 0 (0.0%)
+  Range: 1 to 31
+  Mean: 15.622
+  Median: 15.0
+  Sample values: 22, 2, 5, 25, 27, 25, 19, 2, 22, 13
+
+date (datetime64[ns])
+  Null count: 0 (0.0%)
+  DateTime range: 2019-01-01 00:00:00 to 2024-12-31 00:00:00
+  Time span: N/A days (N/A hours)
+  Sample values: 2022-03-22 00:00:00, 2022-01-02 00:00:00, 2022-06-05 00:00:00, 2020-09-25 00:00:00, 2024-09-27 00:00:00, 2022-02-25 00:00:00, 2022-08-19 00:00:00, 2024-09-02 00:00:00, 2019-12-22 00:00:00, 2023-06-13 00:00:00
+
+day_of_week (object)
+  Null count: 0 (0.0%)
+  Unique values: 7
+  String length: 3 to 3 chars
+  Alphabetical range: "Fri" to "Wed"
+  Most common: "Tue", "Sat", "Mon", "Thu", "Sun"
+  Sample values: "Tue", "Sun", "Sun", "Fri", "Fri", "Fri", "Fri", "Mon", "Sun", "Tue"
+
+day_of_week_num (Int64)
+  Null count: 0 (0.0%)
+  Range: 1 to 7
+  Mean: 3.996
+  Median: 4.0
+  Sample values: 3, 1, 1, 6, 6, 6, 6, 2, 1, 3
+
+carrier (object)
+  Null count: 0 (0.0%)
+  Unique values: 8
+  String length: 2 to 2 chars
+  Alphabetical range: "AA" to "WN"
+  Most common: "AA", "DL", "UA", "WN", "B6"
+  Sample values: "AS", "AS", "WN", "UA", "AA", "B6", "UA", "AA", "UA", "AA"
+
+airline_name (object)
+  Null count: 0 (0.0%)
+  Unique values: 8
+  String length: 5 to 9 chars
+  Alphabetical range: "Alaska" to "United"
+  Most common: "American", "Delta", "United", "Southwest", "JetBlue"
+  Sample values: "Alaska", "Alaska", "Southwest", "United", "American", "JetBlue", "United", "American", "United", "American"
+
+flight (object)
+  Null count: 0 (0.0%)
+  Unique values: 2449
+  String length: 5 to 6 chars
+  Alphabetical range: "AA100" to "WN9943"
+  Most common: "AA3290", "DL2734", "AA8957", "UA8160", "AA2404"
+  Sample values: "AS4842", "AS4318", "WN1524", "UA7198", "AA2108", "B64226", "UA7072", "AA5341", "UA9875", "AA5140"
+
+tailnum (object)
+  Null count: 0 (0.0%)
+  Unique values: 2462
+  String length: 6 to 6 chars
+  Alphabetical range: "N10031" to "N99989"
+  Most common: "N81999", "N79352", "N73526", "N64470", "N22057"
+  Sample values: "N20812", "N98289", "N19319", "N32680", "N91013", "N41251", "N50680", "N45007", "N25546", "N21103"
+
+origin (object)
+  Null count: 0 (0.0%)
+  Unique values: 1
+  String length: 3 to 3 chars
+  Alphabetical range: "DCA" to "DCA"
+  Most common: "DCA"
+  Sample values: "DCA", "DCA", "DCA", "DCA", "DCA", "DCA", "DCA", "DCA", "DCA", "DCA"
+
+dest (object)
+  Null count: 0 (0.0%)
+  Unique values: 60
+  String length: 3 to 3 chars
+  Alphabetical range: "ABQ" to "TUS"
+  Most common: "AUS", "MSP", "SYR", "GEG", "CHS"
+  Sample values: "CMH", "SEA", "MCO", "ROC", "DFW", "ORD", "TPA", "BUF", "CMH", "GSP"
+
+sched_dep_time (Int64)
+  Null count: 0 (0.0%)
+  Range: 600 to 2259
+  Mean: 1313.5928
+  Median: 1309.5
+  Sample values: 942, 1934, 651, 1529, 1712, 1831, 700, 909, 632, 952
+
+dep_time (Int64)
+  Null count: 0 (0.0%)
+  Range: 553 to 2283
+  Mean: 1301.54
+  Median: 1287.0
+  Sample values: 951, 1892, 610, 1534, 1669, 1787, 659, 911, 588, 982
+
+dep_delay (Int64)
+  Null count: 0 (0.0%)
+  Range: -10 to 120
+  Mean: 5.7072
+  Median: 0.0
+  Sample values: 9, -2, -1, 5, -3, -4, -1, 2, -4, 30
+
+dep_delay_flag (Int64)
+  Null count: 0 (0.0%)
+  Range: 0 to 1
+  Mean: 0.1112
+  Median: 0.0
+  Sample values: 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+
+sched_arr_time (Int64)
+  Null count: 0 (0.0%)
+  Range: 629 to 2757
+  Mean: 1460.3708
+  Median: 1447.5
+  Sample values: 1082, 2446, 787, 1568, 1939, 2068, 824, 1030, 670, 1004
+
+arr_time (Int64)
+  Null count: 0 (0.0%)
+  Range: 581 to 2715
+  Mean: 1449.4
+  Median: 1435.0
+  Sample values: 1088, 2448, 740, 1576, 1896, 2024, 834, 1031, 625, 1036
+
+arr_delay (Int64)
+  Null count: 0 (0.0%)
+  Range: -26 to 123
+  Mean: 5.5892
+  Median: 1.0
+  Sample values: 6, 2, -7, 8, -3, -4, 10, 1, -5, 32
+
+arr_delay_flag (Int64)
+  Null count: 0 (0.0%)
+  Range: 0 to 1
+  Mean: 0.1324
+  Median: 0.0
+  Sample values: 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+
+on_time (Int64)
+  Null count: 0 (0.0%)
+  Range: 0 to 1
+  Mean: 0.8676
+  Median: 1.0
+  Sample values: 1, 1, 1, 1, 1, 1, 1, 1, 1, 0
+
+delay_category (object)
+  Null count: 0 (0.0%)
+  Unique values: 4
+  String length: 7 to 16 chars
+  Alphabetical range: "Delayed" to "Slightly Late"
+  Most common: "Early/On-Time", "Slightly Late", "Delayed", "Severely Delayed"
+  Sample values: "Slightly Late", "Slightly Late", "Early/On-Time", "Slightly Late", "Early/On-Time", "Early/On-Time", "Slightly Late", "Slightly Late", "Early/On-Time", "Delayed"
+
+air_time (Int64)
+  Null count: 0 (0.0%)
+  Range: 25 to 325
+  Mean: 100.25
+  Median: 76.0
+  Sample values: 100, 312, 96, 39, 147, 157, 84, 81, 38, 52
+
+distance (Int64)
+  Null count: 0 (0.0%)
+  Range: 200 to 2597
+  Mean: 801.9248
+  Median: 611.5
+  Sample values: 799, 2497, 766, 315, 1177, 1254, 671, 650, 304, 418
+
+time_period (object)
+  Null count: 0 (0.0%)
+  Unique values: 5
+  String length: 5 to 13 chars
+  Alphabetical range: "Afternoon" to "Night"
+  Most common: "Afternoon", "Early Morning", "Evening", "Morning", "Night"
+  Sample values: "Morning", "Evening", "Early Morning", "Afternoon", "Evening", "Evening", "Early Morning", "Morning", "Early Morning", "Morning"
+
+dep_delay_flag_bool (boolean)
+  Null count: 0 (0.0%)
+  Range: False to True
+  Mean: 0.1112
+  Median: 0.0
+  Sample values: False, False, False, False, False, False, False, False, False, True
+
+arr_delay_flag_bool (boolean)
+  Null count: 0 (0.0%)
+  Range: False to True
+  Mean: 0.1324
+  Median: 0.0
+  Sample values: False, False, False, False, False, False, False, False, False, True
+
+on_time_bool (boolean)
+  Null count: 0 (0.0%)
+  Range: False to True
+  Mean: 0.8676
+  Median: 1.0
+  Sample values: True, True, True, True, True, True, True, True, True, False

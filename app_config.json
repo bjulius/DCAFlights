@@ -1,0 +1,96 @@
+{
+  "project_name": "DCA Flight Analysis Data App",
+  "project_description": "Comprehensive analysis of flight operations from Ronald Reagan Washington National Airport (DCA), examining destinations, delay patterns, seasonal trends, airline performance, and temporal flight patterns to optimize travel planning and understand operational efficiency.",
+  "charts": [
+    {
+      "id": "flight_routes_bar_chart",
+      "initial_prompt": "Flight routes from DCA to all destinations as a bar chart with dropdown to sort by flight frequency or distance and multi-select filter for airlines (all airlines selected by default)"
+    },
+    {
+      "id": "delay_by_weekday_bar_chart",
+      "initial_prompt": "Average delay by day of week as a bar chart with dropdown to toggle between departure delay and arrival delay and checkbox to include only delayed flights"
+    },
+    {
+      "id": "monthly_flight_trends_line_chart",
+      "initial_prompt": "Monthly flight volume and delay trends as a line chart with dropdown to select metric (flight count, average delay, on-time percentage) and slider to filter by year range (2019-2024)"
+    },
+    {
+      "id": "airline_performance_horizontal_bar",
+      "initial_prompt": "Airline on-time performance comparison as a horizontal bar chart with dropdown to sort by on-time percentage or total flights and multi-select filter for delay categories (Early/On-Time, Slightly Late, Delayed, Severely Delayed)"
+    },
+    {
+      "id": "flight_operations_stacked_bar",
+      "initial_prompt": "Flight operations trends by year as a stacked bar chart with dropdown to group by airline or destination and checkbox to normalize by percentage"
+    },
+    {
+      "id": "delay_distribution_box_plot",
+      "initial_prompt": "Flight delay distribution by time period as a box plot with multi-select dropdown for time periods (Early Morning, Morning, Afternoon, Evening, Night) and slider to filter delay range (-30 to 120 minutes)"
+    },
+    {
+      "id": "flight_connections_map",
+      "initial_prompt": "Map showing direct connections with curved flight lines, filtered by airline and time periods\n"
+    }
+  ],
+  "global_filters": [
+    {
+      "id": "year_filter",
+      "initial_prompt": "Year with multi-select dropdown (2019, 2020, 2021, 2022, 2023, 2024)"
+    },
+    {
+      "id": "airline_filter",
+      "initial_prompt": "Airline with multi-select dropdown (American, Delta, United, Southwest, JetBlue, Alaska, Frontier, Spirit)"
+    },
+    {
+      "id": "destination_airport_filter",
+      "initial_prompt": "Destination Airport with multi-select dropdown (all 60 unique destinations in alphabetical order)"
+    },
+    {
+      "id": "month_filter",
+      "initial_prompt": "Month with multi-select dropdown (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec)"
+    },
+    {
+      "id": "day_of_week_filter",
+      "initial_prompt": "Day of Week with multi-select dropdown (Mon, Tue, Wed, Thu, Fri, Sat, Sun)"
+    },
+    {
+      "id": "time_period_filter",
+      "initial_prompt": "Time Period with multi-select dropdown (Early Morning, Morning, Afternoon, Evening, Night)"
+    },
+    {
+      "id": "delay_category_filter",
+      "initial_prompt": "Delay Category with multi-select dropdown (Early/On-Time, Slightly Late, Delayed, Severely Delayed)"
+    },
+    {
+      "id": "flight_distance_filter",
+      "initial_prompt": "Flight Distance with range input (200 to 2597 miles)"
+    },
+    {
+      "id": "date_range_filter",
+      "initial_prompt": "Date Range with date picker range (2019-01-01 to 2024-12-31)"
+    }
+  ],
+  "theme": {
+    "initial_prompt": "Aviation theme with blue and white color scheme reflecting sky and clouds, clean modern typography with subtle grid lines, and professional styling suitable for travel industry analysis"
+  },
+  "other_details": "",
+  "finalized": true,
+  "deployments": [
+    {
+      "id": "5d15c14a-fda6-4037-bff3-5d082aebf6b3",
+      "author_id": "55d057c9-aa16-45c8-b3d6-1cbfd00419b6",
+      "name": "DCA Flight Analysis Data App",
+      "description": "Comprehensive analysis of flight operations from Ronald Reagan Washington National Airport (DCA), examining destinations, delay patterns, seasonal trends, airline performance, and temporal flight patterns to optimize travel planning and understand operational efficiency.",
+      "app_url": "cfb63fae-a3a4-4b13-875a-aaf4614c09d9",
+      "python_version": "3.12",
+      "is_view_private": true,
+      "created_with_desktop": true,
+      "desktop_app_version": "0.0.16",
+      "environment_variables": null,
+      "invitations": null,
+      "created_at": "2025-08-11T21:30:16.457777Z",
+      "status": "",
+      "last_published": null,
+      "platform": "plotly_cloud"
+    }
+  ]
+}

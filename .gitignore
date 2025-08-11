@@ -1,0 +1,89 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Credentials and sensitive data
+.env
+.env.local
+config.ini
+secrets.json
+credentials.json
+*.key
+*.pem
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# Data files that might be too large or sensitive
+*.csv.gz
+*.xlsx
+*.xls
+data_backup/
+
+# Dash/Plotly
+*.pyc
+.webassets-cache
+
+# System files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Jupyter Notebooks (if any)
+.ipynb_checkpoints/
+*.ipynb
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# pytest
+.pytest_cache/
+
+# Documentation builds
+docs/_build/
